@@ -6,17 +6,15 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/x-icon" href="img/favo.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -26,6 +24,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -35,30 +34,31 @@
 <header>
   <div id="myNav" class="overlay">
     <div class="main-header__logo">
-      <a href=""><img src="img/future-people-logo.svg" alt="Future People Logo SVG"/></a>
+      <a href="/"><img src="img/Logo-initiale.png" width="60" alt="Future People Logo SVG"/></a>
     </div>
     <!-- Button to close the overlay navigation -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
 
     <!-- Overlay content -->
     <div class="overlay-content">
-     <div class="d-block "><div class="ov-item d-inline-flex align-items-center"><a href="#">Formations</a><img src="img/arrow-btn.svg"/></div></div>
-     <div class="d-block "><div class="ov-item  d-inline-flex align-items-center"><a href="#">Consulting</a><img src="img/arrow-btn.svg"/> </div></div>
-     <div class="d-block "><div class="ov-item  d-inline-flex align-items-center"><a href="#">Notre vision</a><img src="img/arrow-btn.svg"/></div> </div>
-     <div class="d-block "><div class="ov-item  d-inline-flex align-items-center"><a href="#">Contact</a><img src="img/arrow-btn.svg"/> </div></div>
+     <div class="d-block "><div class="ov-item d-inline-flex align-items-center"><a href="formations.html">Formations</a><img src="img/arrow-btn.svg"/></div></div>
+     <div class="d-block "><div class="ov-item  d-inline-flex align-items-center"><a href="consulting.html">Consulting</a><img src="img/arrow-btn.svg"/> </div></div>
+     <div class="d-block "><div class="ov-item  d-inline-flex align-items-center"><a href="about.html">Notre vision</a><img src="img/arrow-btn.svg"/></div> </div>
+     <div class="d-block "><div class="ov-item  d-inline-flex align-items-center"><a href="contact.html">Contact</a><img src="img/arrow-btn.svg"/> </div></div>
     </div>
 
     <div class="overlay-footer">
       <div class="footer-social">
-        <div><a href=""><img src="img/insta.svg"/> </a></div>
-        <div><a href=""><img src="img/linked.svg"/> </a></div>
+        <div><a href="https://www.instagram.com/lecollectifrh/" target="_blank"><img src="img/insta.svg"/> </a></div>
+        <div><a href="https://www.linkedin.com/company/futurepeopleparis/
+" target="_blank"><img src="img/linked.svg"/> </a></div>
       </div>
     </div>
 
   </div>
   <div class="main-header">
     <div class="main-header__logo">
-      <a href=""><img src="img/future-people-logo.svg" alt="Future People Logo SVG"/></a>
+      <a href="/"><img src="img/Logo-initiale.png" width="60" alt="Future People Logo SVG"/></a>
     </div>
     <div onclick="openNav()" class="main-header__burger-btn">
       <span></span>
@@ -71,27 +71,27 @@
   <input type="hidden" id="show-msg" value="0"/>
   <div class="services">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-7">
         <div class="services__title"><h1>Nous accompagnons et formons les RH de demain pour les entreprises de demain.
         </h1></div>
       </div>
       <div class="col-md-12">
         <div class="services-buttons">
           <div class="d-flex">
-            <div class="services-buttons_btn"><a class="blue" href="">Formations</a></div>
-            <div class="services-buttons_btn"><a class="pink" href="">Consulting</a></div>
+            <div class="services-buttons_btn"><a class="blue" href="formations.html">Formations</a></div>
+            <div class="services-buttons_btn"><a class="pink" href="consulting.html">Consulting</a></div>
             <div class="services-buttons_btn"><a class="orange" href="">F.A.Q</a></div>
           </div>
           <div class="d-flex mt-45">
-            <div class="services-buttons_btn"><a class="yellow" href="">Notre vision</a></div>
-            <div class="services-buttons_btn"><a class="green" href="">Contact</a></div>
+            <div class="services-buttons_btn"><a class="yellow" href="about.html">Notre vision</a></div>
+            <div class="services-buttons_btn"><a class="green" href="contact.html">Contact</a></div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="marquee">
-    <marquee onmouseover="this.stop();" onmouseout="this.start();" id='scroll'>
+    <marquee direction="right" onmouseover="this.stop();" onmouseout="this.start();" id='scroll'>
       <div class="d-flex align-items-center">
         <div><a href="">Les RH de demain pour les entreprises de demain</a>
         </div>
@@ -114,8 +114,7 @@
         <div class="centered-text__title col-md-5">Un accompagnement pensé pour les start-ups et les PMEs.</div>
       </div>
       <div class="col-md-12 text-center d-flex justify-content-center">
-        <div class="centered-text__details col-md-5">Tous nos accompagnements et formations sont adaptés
-          spécifiquement pour les problématiques des start-ups et des PMEs.
+        <div class="centered-text__details col-md-5">Tous nos accompagnements et formations sont adaptés spécifiquement pour les problématiques des start-ups et des PMEs.
         </div>
       </div>
       <div class="col-md-12 text-center d-flex justify-content-center">
@@ -125,17 +124,19 @@
   </div>
   <div class="pink-blue">
     <div class="row">
-      <div class="col-md-6 blue d-flex align-item-center justify-content-center pd-100"><img src="img/left-image.svg"/>
+      <div class="col-md-6 blue d-flex align-item-center justify-content-center pd-100 border-top"><img src="img/left-image.svg"/>
       </div>
       <div
-        class="col-md-6 pink flex-column d-flex align-item-center justify-content-center pd-100 position-relative blue-before">
-        <div class="pink-blue__title">La pratique et le
+        class="col-md-6 pink flex-column d-flex align-item-center justify-content-center pd-100 position-relative blue-before border-top-left">
+        <div class="pink-blue__title">La pratique et le<br>
           concret au coeur de tout.
         </div>
-        <div class="pink-blue__details">En RH, on est souvent confronté à un problème : la théorie versus la réalité du
-          business ! Chez Future People, on pense qu’il est impossible de tout savoir mais qu’il faut connaitre le
-          nécessaire et surtout savoir où et comment chercher et analyser des informations, pour piloter en toute
-          sérénité tout type de problématique RH !
+        <div class="pink-blue__details">En RH, on est souvent confronté à un problème : la théorie<br>
+          versus la réalité du business ! Chez Future People, on pense<br>
+          qu’il est impossible de tout savoir mais qu’il faut connaitre<br>
+          le nécessaire et surtout savoir où et comment chercher<br>
+          et analyser des informations, pour piloter en toute sérénité<br> tout type de problématique RH !
+
         </div>
         <div class="pink-blue__btn"><a href=""><span>En savoir plus <img src="img/arrow-btn.svg"/> </span></a></div>
       </div>
@@ -158,9 +159,9 @@
   </div>
   <div class="yellow-section yellow">
     <div>
-      <img src="img/yellow-section.png"/>
+      <img src="img/yellow-section.svg"/>
       <div>
-        <div class="yellow-section_btn"><a class="white" href="">Decouvrir notre vision</a></div>
+        <div class="yellow-section_btn"><a class="white" href="/about.html">Decouvrir notre vision</a></div>
       </div>
     </div>
   </div>
@@ -208,7 +209,7 @@
 
   </div>
   <div class="marquee">
-    <marquee onmouseover="this.stop();" onmouseout="this.start();" id='scroll'>
+    <marquee direction="right"  onmouseover="this.stop();" onmouseout="this.start();" id='scroll'>
       <div class="d-flex align-items-center">
         <div><a href="">Frequently asked questions</a>
         </div>
@@ -240,18 +241,12 @@
           <div id="faq_collapse1" class="accordion-collapse collapse " aria-labelledby="faq_heading1"
           >
             <div class="accordion-body">
-              Le contenu : nous sommes partis du constat que les formations RH sont souvent très techniques et
-              théoriques et/ou peu modernes. Toutes les formations Future People sont appliquées et taillés pour avoir
-              un vrai impact dans ton quotidien.
+             <img class="faq-left-arrow" width="20" src="img/faq-arrow.svg"/> Le contenu : nous sommes partis du constat que les formations RH sont souvent très techniques et théoriques et/ou peu modernes. Toutes les formations Future People sont appliquées et taillés pour avoir un vrai impact dans ton quotidien.
+<br><br>
+              Le format : il n’y aura pas de vieille présentation powerpoint ni de mauvaise connexion visio. Tu auras le meilleur des deux mondes : des moments en petit groupe avec des pères d’entreprise similaire et des sessions en mentoring 1:1. Nos formats sont modernes et personnalisés pour toi : Trello, Notion, Youtube. On s’adapte à toi.
               <br><br>
-              Le format : il n’y aura pas de vieille présentation powerpoint ni de mauvaise connexion visio. Tu auras le
-              meilleur des deux mondes : des moments en petit groupe avec des pères d’entreprise similaire et des
-              sessions en mentoring 1:1. Nos formats sont modernes et personnalisés pour toi : Trello, Notion, Youtube.
-              On s’adapte à toi.
-              <br><br>
-              Les intervenants : Nous sommes profondément convaincus que les meilleures formations sont celles qui sont
-              crées et dispensées par des personnes qui sont, et qui sont toujours, sur le terrain ! Et ça, c’est nous.
-              Chaque intervenant est, lui/elle aussi, RH ou DRH.
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow.svg"/> Les intervenants : Nous sommes profondément convaincus que les meilleures formations sont celles qui sont crées et dispensées par des personnes qui sont, et qui sont toujours, sur le terrain ! Et ça, c’est nous. Chaque intervenant est, lui/elle aussi, RH ou DRH.
+
 
             </div>
           </div>
@@ -265,25 +260,13 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq_collapse2"
                     aria-expanded="false" aria-controls="faq_collapse2">
-              C’est quoi la différence entre les formations Future People et d’autres formations RH ?
+              J’ai déjà un Master en RH, vous pouvez quand même m’apprendre quelque chose ?
             </button>
           </h2>
           <div id="faq_collapse2" class="accordion-collapse collapse " aria-labelledby="faq_heading2"
           >
             <div class="accordion-body">
-              Le contenu : nous sommes partis du constat que les formations RH sont souvent très techniques et
-              théoriques et/ou peu modernes. Toutes les formations Future People sont appliquées et taillés pour avoir
-              un vrai impact dans ton quotidien.
-              <br><br>
-              Le format : il n’y aura pas de vieille présentation powerpoint ni de mauvaise connexion visio. Tu auras le
-              meilleur des deux mondes : des moments en petit groupe avec des pères d’entreprise similaire et des
-              sessions en mentoring 1:1. Nos formats sont modernes et personnalisés pour toi : Trello, Notion, Youtube.
-              On s’adapte à toi.
-              <br><br>
-              Les intervenants : Nous sommes profondément convaincus que les meilleures formations sont celles qui sont
-              crées et dispensées par des personnes qui sont, et qui sont toujours, sur le terrain ! Et ça, c’est nous.
-              Chaque intervenant est, lui/elle aussi, RH ou DRH.
-
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow-green.svg"/>  Tout dépend de ton objectif et de ton Master mais toutes nos formations sont axées sur les contextes de start-up/PME (à l’inverse des Master) et équipent les participants avec des compétences en posture, communication, gestion de projet et accompagnement de co-fondateur et de manager.
             </div>
           </div>
         </div>
@@ -296,24 +279,84 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq_collapse3"
                     aria-expanded="false" aria-controls="faq_collapse3">
-              C’est quoi la différence entre les formations Future People et d’autres formations RH ?
+              Est-ce que je ne devrais pas plutôt faire un Master ?
             </button>
           </h2>
           <div id="faq_collapse3" class="accordion-collapse collapse " aria-labelledby="faq_heading3"
           >
             <div class="accordion-body">
-              Le contenu : nous sommes partis du constat que les formations RH sont souvent très techniques et
-              théoriques et/ou peu modernes. Toutes les formations Future People sont appliquées et taillés pour avoir
-              un vrai impact dans ton quotidien.
-              <br><br>
-              Le format : il n’y aura pas de vieille présentation powerpoint ni de mauvaise connexion visio. Tu auras le
-              meilleur des deux mondes : des moments en petit groupe avec des pères d’entreprise similaire et des
-              sessions en mentoring 1:1. Nos formats sont modernes et personnalisés pour toi : Trello, Notion, Youtube.
-              On s’adapte à toi.
-              <br><br>
-              Les intervenants : Nous sommes profondément convaincus que les meilleures formations sont celles qui sont
-              crées et dispensées par des personnes qui sont, et qui sont toujours, sur le terrain ! Et ça, c’est nous.
-              Chaque intervenant est, lui/elle aussi, RH ou DRH.
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow-pink.svg"/>   Tout dépend de ton objectif, de ta situation et de tes priorités. Pour certaines personnes, entamer un Master à temps plein ou à temps partiel peut être le bon choix. Mais ce n’est pas forcément le destin de tout le monde ! Grace, co-fondatrice de Future People, a opté pour la voie Master alors que ça n’a jamais été pertinent pour Jérôme, co-fondateur. Deux chemins qui ont mené à la même destination.
+<br><br>
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow-pink.svg"/>   Nous serions heureux de t’accompagner dans ta réflexion et d’en discuter de manière ouverte.
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="accordion" id="faq_4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq_collapse4"
+                    aria-expanded="false" aria-controls="faq_collapse4">
+              Comment savoir de quelle formation j’ai besoin entre vos différents training ?
+            </button>
+          </h2>
+          <div id="faq_collapse4" class="accordion-collapse collapse " aria-labelledby="faq_heading4"
+          >
+            <div class="accordion-body">
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow-blue.png"/> Sur la page XXXXXXX, tu trouveras un descriptif détaillé de chaque formation.
+<br><br>
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow-blue.png"/> Si tu as un doute et par exemple, si tu te retrouves entre deux niveaux de formation, il faut tout simplement nous en parler ! Il n’y aura aucune obligation d’avancer avec nous, et ça nous fera plaisir de faire connaissance et de comprendre tes problématiques.
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="accordion" id="faq_5">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq_collapse5"
+                    aria-expanded="false" aria-controls="faq_collapse5">
+              Comment puis-je financer la formation ?
+            </button>
+          </h2>
+          <div id="faq_collapse5" class="accordion-collapse collapse " aria-labelledby="faq_heading5"
+          >
+            <div class="accordion-body">
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow-orange.png"/>  Il y a plusieurs solutions mais dans la plupart des cas, nos clients font financer leur formation par leur entreprise (souvent avec une prise en charge totale ou partielle via leur OPCO).
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="accordion" id="faq_6">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq_collapse6"
+                    aria-expanded="false" aria-controls="faq_collapse6">
+              C’est quoi le consulting Future People ? Pourquoi vous ne faites que de la formation ?
+            </button>
+          </h2>
+          <div id="faq_collapse6" class="accordion-collapse collapse " aria-labelledby="faq_heading6"
+          >
+            <div class="accordion-body">
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow.svg"/>   Les RH c’est l’un des métiers qui évolue le plus rapidement et qui évolue en permanence ! Nous sommes intimement convaincus que notre vraie valeur vient du fait d’être opérationnel et d’être au coeur des problématiques de nos clients. En plus, nous adorons nos clients et le fait d’avoir de l’impact rapidement pour eux et de leur voir avancer est une grande source de motivation pour nous !
+<br><br>
+              <img class="faq-left-arrow" width="20" src="img/faq-arrow.svg"/>Notre offre de conseil est simple : nous intervenons 1 à 3 jours, dans vos bureaux, pour des durées variées (en général entre 1 et 9 mois).
+
 
             </div>
           </div>
@@ -326,28 +369,29 @@
 
 <footer>
   <div class="row">
-    <div class="col-4">
+    <div class="col-md-4">
       <div class="footer-text">Accompagner et
         former les RH de demain.
       </div>
       <div class="footer-links">
-        <div><a href="">Formation </a></div>
-        <div><a href="">Consulting </a></div>
-        <div><a href="">Notre vision </a></div>
-        <div><a href="">Contact </a></div>
+        <div><a href="formations.html">Formation</a></div>
+        <div><a href="consulting.html">Consulting</a></div>
+        <div><a href="about.html">Notre vision</a></div>
+        <div><a href="contact.html">Contact</a></div>
       </div>
       <div class="footer-social">
-        <div><a href=""><img src="img/insta.svg"/> </a></div>
-        <div><a href=""><img src="img/linked.svg"/> </a></div>
+        <div><a href="https://www.instagram.com/lecollectifrh/" target="_blank"><img src="img/insta.svg"/> </a></div>
+        <div><a href="https://www.linkedin.com/company/futurepeopleparis/
+" target="_blank"><img src="img/linked.svg"/> </a></div>
       </div>
     </div>
-    <div class="col-8">
+    <div class="col-md-8">
           <div class="d-flex align-items-end  flex-column">
             <div class="logo">
-              <div><img src="img/logo-yellow.svg"/> </div>
+              <div><a href="/"><img src="img/logo-yellow.svg"/></a> </div>
             </div>
             <div class="logo arrow-top">
-              <div><img  width="30" src="img/arrow-top.png"/> </div>
+              <div><img width="40" src="img/arrow-top.png"/> </div>
             </div>
           </div>
     </div>

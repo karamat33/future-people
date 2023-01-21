@@ -106,7 +106,7 @@ body {
   border: 3px solid #000000;
   border-radius: 20px;
   display: inline-block;
-  padding: 15px 60px;
+  padding: 20px 60px;
   box-shadow: 4px 7px 0px 0px black;
   -webkit-transition: all 140ms cubic-bezier(.25, .46, .45, .94);
   transition: all 140ms cubic-bezier(.25, .46, .45, .94);
@@ -132,7 +132,7 @@ body {
 }
 
 .services-buttons_btn a.yellow {
-  background: #F7CA45;
+  background: #FFC903;
 }
 
 .services-buttons_btn a.green {
@@ -157,7 +157,7 @@ body {
 .marquee marquee div a {
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 30px;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -269,7 +269,7 @@ body {
   right: 150px;
   top: -60px;
   height: 132px;
-
+  cursor: url('../img/cursor-link.png'), auto;
 }
 
 .logos .wrapper {
@@ -304,11 +304,11 @@ body {
 }
 
 .yellow-section.yellow {
-  background: #F7CA45;
+  background: #FFC903;
 }
 
 .yell {
-  background: #F7CA45;
+  background: #FFC903;
 }
 
 .yellow-section_btn {
@@ -433,7 +433,7 @@ body {
 }
 
 .faqs-container {
-  padding: 80px;
+  padding: 80px 0px;
   background: #FFF6EE;
 }
 
@@ -488,15 +488,35 @@ body {
   right: 0;
   top: 0;
 }
+.faq:nth-child(2) .accordion-button::after {
+  background-image: url('../img/faq-arrow-green.svg');
+}
+
+.faq:nth-child(3) .accordion-button::after {
+  background-image: url('../img/faq-arrow-pink.svg');
+}
+
+.faq:nth-child(4) .accordion-button::after {
+  background-image: url('../img/faq-arrow-blue.png');
+}
+
+.faq:nth-child(5) .accordion-button::after {
+  background-image: url('../img/faq-arrow-orange.png');
+}
+
+.faq-left-arrow{
+  transform: rotate(90deg);
+  margin-right: 10px;
+}
 
 .faq:nth-child(1) {
-  padding: 80px 0px;
+  padding: 80px 80px;
   border-top: 0px solid #000000;
 
 }
 
 .faq {
-  padding: 80px 0px;
+  padding: 80px 80px;
   border-top: 2px solid #000000;
 
 }
@@ -533,7 +553,7 @@ footer {
 .footer-social {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .footer-social a {
@@ -682,7 +702,7 @@ footer {
   min-height: 80vh;
   display: flex;
   align-items: center;
-  padding-left: 115px;
+  padding-left: 200px;
   border-bottom: 3px solid black;
 }
 
@@ -709,7 +729,11 @@ footer {
   color: #000000;
   margin-bottom: 20px;
 }
-
+.vision__title h1{
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px!important;
+}
 .vision__text {
   font-family: 'Lato Normal';
   font-style: normal;
@@ -788,7 +812,11 @@ footer {
 }
 
 .testimonials-container .next-btn span {
-  background: #F7CA45;
+  background: #FE91E8;
+}
+
+.testimonials-container .next-btn-yellow span{
+  background: #FFC903;
 }
 
 .team-slider {
@@ -864,7 +892,7 @@ footer {
 }
 
 .accordion-button.yellow {
-  background: #F7CA45;
+  background: #FFC903;
 }
 
 .accordion-button.blue {
@@ -968,7 +996,7 @@ footer {
 }
 .span-btn{
   line-height: 0px!important;
-  background: #F7CA45;
+  background: #FFC903;
   margin-left: 12px;
   padding: 0px 25px;
   border-radius: 60px;
@@ -986,14 +1014,12 @@ footer {
   font-size: 30px;
 }
 .contact .vision__subtitle{
-  position: relative;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 70px;
-  /* or 175% */
-  display: inline-block;
-
+  font-size: 28px;
+  line-height: 40px;
+  /* or 143% */
+  position: relative;
   letter-spacing: -0.02em;
   color: #000000;
 
@@ -1007,6 +1033,10 @@ footer {
 
 .contact-form > div > div > div > .w-fixed{
   margin-right: 22px;
+}
+
+.contact{
+  background-color:#FFC903;
 }
 
 .contact .w-fixed{
@@ -1038,8 +1068,28 @@ footer {
   border-radius: 60px;
   font-weight: 700;
   font-size: 13px;
-  line-height: 45px;
-  padding: 0px 60px;
+  line-height: 40px;
+  padding: 0px 70px;
   letter-spacing: -0.02em;
   color: #000000;
+}
+.border-top{
+  border-top:3px solid black!important;
+
+}
+.border-top-left{
+  border-top:3px solid black;
+  border-left: 3px solid black;
+}
+.text-left{
+ text-align: left;
+}
+.mr-60{
+  margin-right: 60px;
+}
+.faq-right-arrow{
+  margin-left: 12px;
+}
+.row{
+  width: 100%;
 }

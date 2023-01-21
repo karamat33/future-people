@@ -13,7 +13,7 @@ $(document).ready(function () {
     dots: false,
     speed: 300,
     infinite: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed:2000,
     autoplay: true,
     responsive: [
       {
@@ -25,7 +25,7 @@ $(document).ready(function () {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         }
       }
     ]
@@ -38,7 +38,7 @@ $(document).ready(function () {
     dots: false,
     speed: 300,
     infinite: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     autoplay: true,
     responsive: [
       {
@@ -85,8 +85,10 @@ $(document).ready(function () {
   })
 
   $(".arrow-top").click(function () {
-    $("html, body").animate({scrollTop: 0}, "slow");
-    return false;
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 
 
@@ -128,28 +130,57 @@ function timerIncrement() {
 function appendMessaage() {
 
   let messages = [
-    "jaime beaucoup ce que je fais",
-    "Je suis fier de mon equipe RH et eux aussi",
-    "Enfin j’ai une equipe motivee",
-    "Mes salaries sont plus rassures"
+    "batons phrase-01.png",
+    "batons phrase-02.png",
+    "batons phrase-03.png",
+    "batons phrase-04.png",
+    "batons phrase-05.png",
+    "batons phrase-06.png",
+    "batons phrase-07.png",
+    "batons phrase-08.png",
+    "batons phrase-09.png",
+    "batons phrase-10.png",
+    "batons phrase-11.png",
+    "batons phrase-12.png",
+    "batons phrase-13.png",
+    "batons phrase-14.png",
+    "batons phrase-15.png",
+    "batons phrase-16.png",
+    "batons phrase-17.png",
+    "batons phrase-18.png",
+    "batons phrase-19.png",
+    "batons phrase-20.png",
+    "batons phrase-21.png",
+    "batons phrase-22.png",
+    "batons phrase-23.png",
+    "batons phrase-24.png",
+    "batons phrase-25.png",
+    "batons phrase-26.png",
+    "batons phrase-27.png",
+    "batons phrase-28.png",
+    "batons phrase-29.png",
+    "batons phrase-30.png",
+    "batons phrase-31.png",
+    "batons phrase-32.png",
+    "batons phrase-33.png",
+    "batons phrase-34.png",
+    "batons phrase-35.png",
+    "batons phrase-36.png"
   ];
 
-  let colors = [
-    "#FFC903",
-    "#FF7051",
-    "#839FE6",
-    "#FE91E8"
-  ]
   if($('#show-msg').val() == 1) {
     var xy = getRandomPosition();
     console.log(xy)
     $('body').append(
       $('<div/>')
         .attr("id", "newDiv1")
-        .attr("style", "top:" + xy[0] + "px;left:" + xy[1] + "px;background-color:" + colors[Math.floor(Math.random() * colors.length)] + ";border: 3px solid #000000;border-radius: 60px;transform: rotate(" + randomIntFromInterval(0, 50) + "deg);padding:10px 16px")
+        .attr("style", "top:" + xy[0] + "px;left:" + xy[1] + "px;transform: rotate(" + randomIntFromInterval(0, 50) + "deg);")
         .addClass("popup-message")
-        .append("<span/>")
-        .text(messages[Math.floor(Math.random() * messages.length)])
+        .append(
+          $("<img/>")
+        .attr("src","img/Phrases/"+messages[Math.floor(Math.random() * messages.length)])
+        .attr("width","370")
+        )
     );
     setTimeout(() => {
       appendMessaage();
@@ -171,10 +202,14 @@ function getRandomPosition() {
 
 /* Open */
 function openNav() {
-  document.getElementById("myNav").style.height = "100%";
+  document.getElementById("myNav").style.height = "100vh";
 }
 
 /* Close */
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+$('.blue-before').before().click(function(){
+  window.location.href="https://www.coeurdeforet.com/presentationassociation";
+})

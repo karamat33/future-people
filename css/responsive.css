@@ -1,0 +1,236 @@
+@media screen and (max-width: 480px) {
+  .main-header {
+    left: 30px;
+  }
+
+  .yellow-section img {
+    width: 100%;
+  }
+
+  .services {
+    padding-left: 30px;
+    min-height: 90vh;
+  }
+
+  .vision,.consulting-header {
+    padding-left: 30px;
+    min-height: 100vh;
+  }
+.vision .vision__subtitle{
+  margin-top: 30px;
+}
+  .services .services__title {
+    margin-top: 100px;
+  }
+
+  .services .services__title h1, .formations .vision__title h1,.consulting-header .vision__title h1 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+  .consulting-header .image img{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .services-buttons {
+    margin-top: 30px;
+  }
+
+  .services-buttons > div {
+    flex-direction: column;
+  }
+
+  .services-buttons_btn a {
+    font-size: 20px;
+    line-height: 35px;
+    padding: 10px 30px;
+    margin-bottom: 35px;
+  }
+
+  .services-buttons .mt-45 {
+    margin-top: 0px;
+  }
+
+  .centered-text__title, .pink-blue__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .pink-blue .blue img {
+    width: 100%;
+  }
+
+  .centered-text__details, .pink-blue__details, .vision__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .centered-text .row {
+    padding: 0px;
+  }
+
+  .centered-text .col-md-12 {
+    padding: 20px;
+  }
+
+  .blue-before:before {
+    background-image: none;
+  }
+
+  .pink-blue .pd-100 {
+    padding: 50px;
+  }
+
+  .row {
+    margin: 0px;
+  }
+
+  .border-top-left {
+    border-left: 0px;
+  }
+
+  .yellow-section_btn a {
+    font-size: 13px;
+    line-height: 25px;
+    padding: 10px 12px;
+  }
+
+  .yellow-section {
+    padding: 90px 20px 90px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonials__image {
+    display: none;
+  }
+
+  .testimonials__card {
+    justify-content: center;
+  }
+
+  .testimonials__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .testimonials__text {
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .next-btn {
+    position: absolute;
+    right: 40px;
+    bottom: 70px;
+  }
+
+  .faq .accordion-button {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .faq, .faq:nth-child(1) {
+    padding: 30px 30px;
+  }
+  .formations-faq .faq:nth-child(1) {
+    padding: 0px;
+  }
+
+  .faq .accordion-button::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-text {
+    font-size: 30px;
+    line-height: 40px;
+
+  }
+
+  footer .col-md-8 > div {
+    flex-direction: row !important;
+  }
+
+  footer .logo a > img {
+    width: 180px;
+  }
+
+  footer .arrow-top img {
+    margin-left: 60px;
+    width: 30px !important;
+  }
+
+  .overlay-content a {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .overlay-content {
+    top: 300px
+  }
+
+  .overlay-content > div:nth-child(1) .ov-item, .overlay-content > div:nth-child(2) .ov-item, .overlay-content > div:nth-child(3) .ov-item, .overlay-content > div:nth-child(4) .ov-item {
+    margin-bottom: 35px;
+  }
+
+  .overlay-footer {
+    position: absolute;
+    bottom: 55px;
+    left: 30px;
+  }
+
+  .overlay .main-header__logo {
+    padding-left: 30px;
+  }
+
+
+  .formations .col-md-7 img {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .formations-faq .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .formations-faq .faq .accordion-button {
+    padding: 60px 60px;
+    border-radius: 0px;
+  }
+  .faq .accordion-body{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .formations-faq .accordion-body{
+    padding: 60px 60px;
+  }
+  .formations-faq .centered-text__btn a{
+    margin-bottom: 30px;
+  }
+  .contact .d-flex {
+    flex-direction: column!important;
+    display: block!important;
+  }
+  .contact{
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    padding-top: 350px;
+  }
+  .contact img{
+    width: 100%;
+  }
+}

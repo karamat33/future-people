@@ -13,7 +13,7 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/x-icon" href="img/favo.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -35,7 +36,7 @@
 <header>
   <div id="myNav" class="overlay">
     <div class="main-header__logo">
-      <a href=""><img src="img/future-people-logo.svg" alt="Future People Logo SVG"/></a>
+      <a href="/"><img src="img/Logo-initiale.png" width="60" alt="Future People Logo SVG"/></a>
     </div>
     <!-- Button to close the overlay navigation -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
@@ -43,34 +44,35 @@
     <!-- Overlay content -->
     <div class="overlay-content">
       <div class="d-block ">
-        <div class="ov-item d-inline-flex align-items-center"><a href="#">Formations</a><img src="img/arrow-btn.svg"/>
+        <div class="ov-item d-inline-flex align-items-center"><a href="formations.html">Formations</a><img src="img/arrow-btn.svg"/>
         </div>
       </div>
       <div class="d-block ">
-        <div class="ov-item  d-inline-flex align-items-center"><a href="#">Consulting</a><img src="img/arrow-btn.svg"/>
+        <div class="ov-item  d-inline-flex align-items-center"><a href="consulting.html">Consulting</a><img src="img/arrow-btn.svg"/>
         </div>
       </div>
       <div class="d-block ">
-        <div class="ov-item  d-inline-flex align-items-center"><a href="#">Notre vision</a><img
+        <div class="ov-item  d-inline-flex align-items-center"><a href="about.html">Notre VIsion</a><img
           src="img/arrow-btn.svg"/></div>
       </div>
       <div class="d-block ">
-        <div class="ov-item  d-inline-flex align-items-center"><a href="#">Contact</a><img src="img/arrow-btn.svg"/>
+        <div class="ov-item  d-inline-flex align-items-center"><a href="contact.html">Contact</a><img src="img/arrow-btn.svg"/>
         </div>
       </div>
     </div>
 
     <div class="overlay-footer">
       <div class="footer-social">
-        <div><a href=""><img src="img/insta.svg"/> </a></div>
-        <div><a href=""><img src="img/linked.svg"/> </a></div>
+        <div><a href="https://www.instagram.com/lecollectifrh/" target="_blank"><img src="img/insta.svg"/> </a></div>
+        <div><a href="https://www.linkedin.com/company/futurepeopleparis/
+" target="_blank"><img src="img/linked.svg"/> </a></div>
       </div>
     </div>
 
   </div>
   <div class="main-header">
     <div class="main-header__logo">
-      <a href=""><img src="img/future-people-logo.svg" alt="Future People Logo SVG"/></a>
+      <a href="/"><img src="img/Logo-initiale.png" width="60" alt="Future People Logo SVG"/></a>
     </div>
     <div onclick="openNav()" class="main-header__burger-btn">
       <span></span>
@@ -82,21 +84,21 @@
 <main>
   <input type="hidden" id="show-msg" value="0"/>
   <div class="vision">
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row w-100">
+      <div class="col-md-4">
         <div class="d-flex flex-column justify-content-center w-100 h-100">
           <div class="vision__subtitle">Notre vision</div>
-          <div class="vision__title"><h1>Future People est né d’un constat
+          <div class="vision__title"><h1>Future People est<br> né d’un constat
           </h1></div>
           <div class="vision__text">
-            Après plusieurs années en RH, nous avons remarqué que les accompagnements et les formations RH sont souvent
-            trop théoriques et abstraits, et quasiment jamais adaptés aux problématiques réelles d’équipe RH en start-up
-            et en PME. Nous le savons, parce que nous l’avons vécu.
+            Après plusieurs années en RH, nous avons remarqué<br> que les accompagnements et les formations RH sont<br> souvent
+            trop théoriques et abstraits, et quasiment<br> jamais adaptés aux problématiques réelles d’équipe RH<br> en start-up
+            et en PME. Nous le savons, parce que nous<br> l’avons vécu.
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <img class="w-100" src="img/vision.svg"/>
+      <div class="col-md-5 text-center">
+        <img  src="img/vision.svg"/>
       </div>
     </div>
   </div>
@@ -104,9 +106,9 @@
   <div class="centered-text-background border-bottom-3">
     <div class="row">
       <div class="col-md-12 text-center d-flex justify-content-center">
-        <div class="centered-text__title col-md-7">Notre mission est d’équiper les RH en start-up et en PME avec la
-          théorie, la posture et les compétences nécessaires pour guider les salariés et les entreprises vers l’avenir,
-          en toute sérénité.
+        <div class="centered-text__title col-md-7">Notre mission est d’équiper les RH en start-up et en PME<br> avec la
+          théorie, la posture et les compétences nécessaires<br> pour guider les salariés et les entreprises vers l’avenir,
+          en<br> toute sérénité.
         </div>
       </div>
     </div>
@@ -188,7 +190,7 @@
   </div>
 
   <div class="marquee">
-    <marquee onmouseover="this.stop();" onmouseout="this.start();" id='scroll'>
+    <marquee direction="right" onmouseover="this.stop();" onmouseout="this.start();" id='scroll'>
       <div class="d-flex align-items-center">
         <div><a href="">Qui sommes nous ? </a>
         </div>
@@ -306,7 +308,7 @@
       </div>
     </div>
 
-    <div class="next-btn">
+    <div class="next-btn next-btn-yellow">
       <div><span>Prochain temoignage</span></div>
     </div>
 
@@ -317,28 +319,29 @@
 
 <footer>
   <div class="row">
-    <div class="col-4">
+    <div class="col-md-4">
       <div class="footer-text">Accompagner et
         former les RH de demain.
       </div>
       <div class="footer-links">
-        <div><a href="">Formation </a></div>
-        <div><a href="">Consulting </a></div>
-        <div><a href="">Notre vision </a></div>
-        <div><a href="">Contact </a></div>
+        <div><a href="formations.html">Formation </a></div>
+        <div><a href="consulting.html">Consulting </a></div>
+        <div><a href="about.html">Notre vision </a></div>
+        <div><a href="contact.html">Contact </a></div>
       </div>
       <div class="footer-social">
-        <div><a href=""><img src="img/insta.svg"/> </a></div>
-        <div><a href=""><img src="img/linked.svg"/> </a></div>
+        <div><a href="https://www.instagram.com/lecollectifrh/" target="_blank"><img src="img/insta.svg"/> </a></div>
+        <div><a href="https://www.linkedin.com/company/futurepeopleparis/
+" target="_blank"><img src="img/linked.svg"/> </a></div>
       </div>
     </div>
-    <div class="col-8">
+    <div class="col-md-8">
       <div class="d-flex align-items-end  flex-column">
         <div class="logo">
-          <div><img src="img/logo-yellow.svg"/></div>
+          <div><a href="/"><img src="img/logo-yellow.svg"/></a></div>
         </div>
         <div class="logo arrow-top">
-          <div><img width="30" src="img/arrow-top.png"/></div>
+          <div><img width="40" src="img/arrow-top.png"/></div>
         </div>
       </div>
     </div>
