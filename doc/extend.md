@@ -537,7 +537,7 @@ Though the dimensions of the icon can vary between iOS devices and versions one
 `<head>` of the page is enough:
 
 ```html
-<link rel="icon" type="image/x-icon" href="img/favo.png">
+<link rel="icon" type="image/x-icon" href="img/Favicon.png">
 ```
 
 For a more comprehensive overview, please refer to Mathias' [article on Touch

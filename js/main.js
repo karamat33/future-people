@@ -6,15 +6,31 @@ $(document).ready(function () {
     $(this).css('cursor', "url('../img/cursor-link.png') , auto");
   });
 
+  $('.activity-slider').slick({
+    variableWidth: true,
+    dots: false,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 0,
+    speed: 15000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: true,
+    cssEase: 'linear',
+    focusOnSelect: false,
+  });
+
   $('.my-slider').slick({
     slidesToShow: 6.5,
-    slidesToScroll: 1,
     arrows: false,
     dots: false,
-    speed: 300,
-    infinite: true,
-    autoplaySpeed:2000,
+    speed: 15000,
+    autoplaySpeed:0,
     autoplay: true,
+    slidesToScroll: 1,
+    infinite: true,
+    cssEase: 'linear',
+    focusOnSelect: false,
     responsive: [
       {
         breakpoint: 991,
@@ -82,6 +98,11 @@ $(document).ready(function () {
   });
   $('.next-btn span').click(function () {
     $('.testimonials-container .slick-next').click();
+  })
+
+  $('.visit-team a').click(function(){
+  
+    $('.team-container  .slick-next').click();
   })
 
   $(".arrow-top").click(function () {
@@ -184,7 +205,7 @@ function appendMessaage() {
     );
     setTimeout(() => {
       appendMessaage();
-    }, 200)
+    }, 1000)
   }
 }
 

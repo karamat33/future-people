@@ -233,4 +233,8 @@
   .contact img{
     width: 100%;
   }
+  .border-left{
+    border-left: 0px solid black;
+  }
 }
+
